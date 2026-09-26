@@ -102,6 +102,18 @@ parser.add_argument(
     action="store_true",
     help="Require the leading 4 photons to pass pt > 12 GeV.",
 )
+
+parser.add_argument(
+    "--apply_lumi_mask",
+    action="store_true",
+    help="Apply the Golden-JSON luminosity mask (data only).",
+)
+
+parser.add_argument(
+    "--lumimask_json",
+    default=None,
+    help="Path to the Golden-JSON lumi mask file.",
+)
 #----------------------------------------------
 
 parser.add_argument(
@@ -131,15 +143,16 @@ cut_4photons = args.cut_4photons or args.apply_event_selection
 cut_eta = args.cut_eta or args.apply_event_selection
 cut_pixel_seed = args.cut_pixel_seed or args.apply_event_selection
 cut_pt = args.cut_pt or args.apply_event_selection
+apply_lumi_mask = args.apply_lumi_mask or args.apply_event_selection
 '''
 # no event-selection cuts applied
-python run.py --input input.root --output skim_noselection.root --config core/config_data.py --data --apply_trigger
+python run.py --input input.root --output skim_noselection.root --config core/config_data.py --data --apply_trigger  --lumimask_json /path to/GoldenJSON file
 
 # all event-selection cuts applied
-python run.py --input input.root --output skim_data.root --config core/config_data.py --data --apply_trigger --apply-event-selection
+python run.py --input input.root --output skim_data.root --config core/config_data.py --data --apply_trigger --apply-event-selection --lumimask_json /path to/GoldenJSON file
 
 # eta and pixelSeed cuts stay OFF; only 4-photon + pt cuts applied
-python run.py --input input.root --output skim_finegrained.root --config core/config_mc.py --apply-event-selection --cut_4photons --cut_pt
+python run.py --input input.root --output skim_finegrained.root --config core/config_mc.py --apply-event-selection --cut_4photons --cut_pt --lumimask_json /path to/GoldenJSON file
 
 '''
 #-----------------------------------------------------------------
@@ -160,7 +173,9 @@ store = NanoReducer(
     cut_4photons=cut_4photons,
     cut_eta=cut_eta,
     cut_pixel_seed=cut_pixel_seed,
-    cut_pt=cut_pt
+    cut_pt=cut_pt,
+    apply_lumi_mask=apply_lumi_mask,
+    lumimask_json=args.lumimask_json,
 ).run()
 
 NanoWriter(args.output, config=config, data_kind=data_kind).write(store)

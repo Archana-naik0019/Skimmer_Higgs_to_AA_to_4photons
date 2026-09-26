@@ -1,9 +1,19 @@
 import numpy as np
 import awkward as ak
 
+from coffea.lumi_tools import LumiMask
+
 GAP_BARREL_ETA = 1.4442
 GAP_ENDCAP_ETA = 1.5660
 MAX_ETA = 2.5
+
+def get_lumi_mask(run, luminosityBlock, json_path):
+    #Applies a Golden-JSON luminosity mask for Data events
+    if json_path is None:
+        return np.ones(len(run), dtype=bool)
+
+    lumi_mask = LumiMask(json_path)
+    return lumi_mask(run, luminosityBlock)
 
 def event_mask(
     collections,
@@ -13,11 +23,22 @@ def event_mask(
     cut_eta=True,
     cut_pixel_seed=True,
     cut_pt=True,
+    apply_lumi_mask=False,
+    run=None,
+    luminosityBlock=None,
+    lumimask_json=None,
 ):
     photons = collections["Photon"]
     nPho = ak.num(photons, axis=1)
 
     mask = trigger_mask if trigger_mask is not None else ak.ones_like(nPho, dtype=bool)
+
+    if apply_lumi_mask and run is not None and luminosityBlock is not None:
+        lumi_mask = get_lumi_mask(
+            ak.to_numpy(run), ak.to_numpy(luminosityBlock), lumimask_json
+        )
+        mask = mask & lumi_mask
+    
     cut_masks = {}
 
     if cut_4photons:

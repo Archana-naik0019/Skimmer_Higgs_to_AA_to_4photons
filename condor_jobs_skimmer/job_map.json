@@ -1,0 +1,50 @@
+[
+  {
+    "encoded_input_file": "cm9vdDovL2Vvc3VzZXIuY2Vybi5jaC8vZW9zL3VzZXIvYS9hcm5haWsvU2VyZ2lfZXZ0TWl4X3NhbXBsZXMvUnVuRXZ0TWl4MjAyNEQvNGViOTZkNDUtZDFkMy00ZmU5LWJiNzYtODk5MjM4YWQ3ODU0X25jMzBfb2Zmc2V0MC5yb290",
+    "dataset": "Missing2024D",
+    "outdir": "/eos/user/a/arnaik/Sergi_evtmixed_Skimmed_noCuts/Missing2024D/4eb96d45-d1d3-4fe9-bb76-899238ad7854_nc30_offset0",
+    "outfile": "/eos/user/a/arnaik/Sergi_evtmixed_Skimmed_noCuts/Missing2024D/4eb96d45-d1d3-4fe9-bb76-899238ad7854_nc30_offset0/skim_4eb96d45-d1d3-4fe9-bb76-899238ad7854_nc30_offset0.root"
+  },
+  {
+    "encoded_input_file": "cm9vdDovL2Vvc3VzZXIuY2Vybi5jaC8vZW9zL3VzZXIvYS9hcm5haWsvU2VyZ2lfZXZ0TWl4X3NhbXBsZXMvUnVuRXZ0TWl4MjAyNEQvNTkyNmZmODItODI3MC00NzhjLWE0MzMtOWJmYjM4MTcyN2I1X25jMzBfb2Zmc2V0MzAucm9vdA==",
+    "dataset": "Missing2024D",
+    "outdir": "/eos/user/a/arnaik/Sergi_evtmixed_Skimmed_noCuts/Missing2024D/5926ff82-8270-478c-a433-9bfb381727b5_nc30_offset30",
+    "outfile": "/eos/user/a/arnaik/Sergi_evtmixed_Skimmed_noCuts/Missing2024D/5926ff82-8270-478c-a433-9bfb381727b5_nc30_offset30/skim_5926ff82-8270-478c-a433-9bfb381727b5_nc30_offset30.root"
+  },
+  {
+    "encoded_input_file": "cm9vdDovL2Vvc3VzZXIuY2Vybi5jaC8vZW9zL3VzZXIvYS9hcm5haWsvU2VyZ2lfZXZ0TWl4X3NhbXBsZXMvUnVuRXZ0TWl4MjAyNEQvNmU3NTNkZWQtZGYzMy00ODk0LWJhYTItNTY4NmY2ZjlkNWQyX25jMzBfb2Zmc2V0MzAucm9vdA==",
+    "dataset": "Missing2024D",
+    "outdir": "/eos/user/a/arnaik/Sergi_evtmixed_Skimmed_noCuts/Missing2024D/6e753ded-df33-4894-baa2-5686f6f9d5d2_nc30_offset30",
+    "outfile": "/eos/user/a/arnaik/Sergi_evtmixed_Skimmed_noCuts/Missing2024D/6e753ded-df33-4894-baa2-5686f6f9d5d2_nc30_offset30/skim_6e753ded-df33-4894-baa2-5686f6f9d5d2_nc30_offset30.root"
+  },
+  {
+    "encoded_input_file": "cm9vdDovL2Vvc3VzZXIuY2Vybi5jaC8vZW9zL3VzZXIvYS9hcm5haWsvU2VyZ2lfZXZ0TWl4X3NhbXBsZXMvUnVuRXZ0TWl4MjAyNEQvNzA0MDFiYTMtZjNjMy00MjBiLTgwZmQtYmZjOTkyMmE0ZDU1X25jMzBfb2Zmc2V0MzAucm9vdA==",
+    "dataset": "Missing2024D",
+    "outdir": "/eos/user/a/arnaik/Sergi_evtmixed_Skimmed_noCuts/Missing2024D/70401ba3-f3c3-420b-80fd-bfc9922a4d55_nc30_offset30",
+    "outfile": "/eos/user/a/arnaik/Sergi_evtmixed_Skimmed_noCuts/Missing2024D/70401ba3-f3c3-420b-80fd-bfc9922a4d55_nc30_offset30/skim_70401ba3-f3c3-420b-80fd-bfc9922a4d55_nc30_offset30.root"
+  },
+  {
+    "encoded_input_file": "cm9vdDovL2Vvc3VzZXIuY2Vybi5jaC8vZW9zL3VzZXIvYS9hcm5haWsvU2VyZ2lfZXZ0TWl4X3NhbXBsZXMvUnVuRXZ0TWl4MjAyNEQvNzJmOTkyYmUtYTM3Yi00ZDkxLTkxNDYtMjZmN2JmYTI3ZWUxX25jMzBfb2Zmc2V0MzAucm9vdA==",
+    "dataset": "Missing2024D",
+    "outdir": "/eos/user/a/arnaik/Sergi_evtmixed_Skimmed_noCuts/Missing2024D/72f992be-a37b-4d91-9146-26f7bfa27ee1_nc30_offset30",
+    "outfile": "/eos/user/a/arnaik/Sergi_evtmixed_Skimmed_noCuts/Missing2024D/72f992be-a37b-4d91-9146-26f7bfa27ee1_nc30_offset30/skim_72f992be-a37b-4d91-9146-26f7bfa27ee1_nc30_offset30.root"
+  },
+  {
+    "encoded_input_file": "cm9vdDovL2Vvc3VzZXIuY2Vybi5jaC8vZW9zL3VzZXIvYS9hcm5haWsvU2VyZ2lfZXZ0TWl4X3NhbXBsZXMvUnVuRXZ0TWl4MjAyNEQvODc0ZDdlZTktODdlNC00NTM2LWFhMTItNDllYzMxNWE4MjI0X25jMzBfb2Zmc2V0MC5yb290",
+    "dataset": "Missing2024D",
+    "outdir": "/eos/user/a/arnaik/Sergi_evtmixed_Skimmed_noCuts/Missing2024D/874d7ee9-87e4-4536-aa12-49ec315a8224_nc30_offset0",
+    "outfile": "/eos/user/a/arnaik/Sergi_evtmixed_Skimmed_noCuts/Missing2024D/874d7ee9-87e4-4536-aa12-49ec315a8224_nc30_offset0/skim_874d7ee9-87e4-4536-aa12-49ec315a8224_nc30_offset0.root"
+  },
+  {
+    "encoded_input_file": "cm9vdDovL2Vvc3VzZXIuY2Vybi5jaC8vZW9zL3VzZXIvYS9hcm5haWsvU2VyZ2lfZXZ0TWl4X3NhbXBsZXMvUnVuRXZ0TWl4MjAyNEQvOWYyOThhOTktMWFhMi00NmQxLTljOGYtMDY3ZTNhZjllNDc1X25jMzBfb2Zmc2V0MC5yb290",
+    "dataset": "Missing2024D",
+    "outdir": "/eos/user/a/arnaik/Sergi_evtmixed_Skimmed_noCuts/Missing2024D/9f298a99-1aa2-46d1-9c8f-067e3af9e475_nc30_offset0",
+    "outfile": "/eos/user/a/arnaik/Sergi_evtmixed_Skimmed_noCuts/Missing2024D/9f298a99-1aa2-46d1-9c8f-067e3af9e475_nc30_offset0/skim_9f298a99-1aa2-46d1-9c8f-067e3af9e475_nc30_offset0.root"
+  },
+  {
+    "encoded_input_file": "cm9vdDovL2Vvc3VzZXIuY2Vybi5jaC8vZW9zL3VzZXIvYS9hcm5haWsvU2VyZ2lfZXZ0TWl4X3NhbXBsZXMvUnVuRXZ0TWl4MjAyNEQvZDFmYTJiNWYtOWE0ZS00ZGM4LWE1YWQtZjEyMGI5ODAyNjJiX25jMzBfb2Zmc2V0MC5yb290",
+    "dataset": "Missing2024D",
+    "outdir": "/eos/user/a/arnaik/Sergi_evtmixed_Skimmed_noCuts/Missing2024D/d1fa2b5f-9a4e-4dc8-a5ad-f120b980262b_nc30_offset0",
+    "outfile": "/eos/user/a/arnaik/Sergi_evtmixed_Skimmed_noCuts/Missing2024D/d1fa2b5f-9a4e-4dc8-a5ad-f120b980262b_nc30_offset0/skim_d1fa2b5f-9a4e-4dc8-a5ad-f120b980262b_nc30_offset0.root"
+  }
+]

@@ -35,6 +35,8 @@ class NanoReducer:
         cut_eta=False,
         cut_pixel_seed=False,
         cut_pt=False,
+        apply_lumi_mask=False,
+        lumimask_json=None,
     ):
 
         self.reader = NanoReader(input_file)
@@ -54,6 +56,8 @@ class NanoReducer:
         self.cut_eta = cut_eta
         self.cut_pixel_seed = cut_pixel_seed
         self.cut_pt = cut_pt
+        self.apply_lumi_mask = apply_lumi_mask
+        self.lumimask_json = lumimask_json
 
     def run(self):
 
@@ -100,6 +104,7 @@ class NanoReducer:
                 trigger_mask = trigger_mask | value
 
         if self.event_selection:
+            is_data = "genWeight" not in self.config.SCALARS # added this line so that I dont have to add another flag for this
             mask, cut_masks = event_mask(
                 collections,
                 trigger_mask=trigger_mask,
@@ -109,6 +114,10 @@ class NanoReducer:
                 cut_eta=self.cut_eta,
                 cut_pixel_seed=self.cut_pixel_seed,
                 cut_pt=self.cut_pt,
+                apply_lumi_mask=(self.apply_lumi_mask and is_data),
+                run=self.reader.read_scalar("run") if (self.apply_lumi_mask and is_data) else None,
+                luminosityBlock=self.reader.read_scalar("luminosityBlock") if (self.apply_lumi_mask and is_data) else None,
+                lumimask_json=self.lumimask_json,
             )
             for name, cut_mask in cut_masks.items():
                 store.add_temp(f"cutflow_{name}", cut_mask)
